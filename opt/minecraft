@@ -18,7 +18,7 @@ ngrok_pid=$!
 echo "Starting sync..."
 bin/sync
 if [ "$READ_ONLY" != "true" ]; then
-  eval "while true; do sleep ${AWS_SYNC_INTERVAL:-60}; bin/sync; done &"
+  eval "while true; do sleep ${SYNC_INTERVAL:-60}; bin/sync; done &"
   sync_pid=$!
 fi
 
