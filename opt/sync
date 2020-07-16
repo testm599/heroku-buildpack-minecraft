@@ -7,7 +7,7 @@ EOF
   if [ -d world ]; then
     echo "Saving world..."
     tar -czvf backup.tar.gz world
-    bin/dropbox_uploader.sh upload backup.tar.gz /testm123
+    bin/dropbox_uploader.sh upload backup.tar.gz /testm123/backup.tar.gz
     rm backup.tar.gz
   else
     echo "Fetching world..."
