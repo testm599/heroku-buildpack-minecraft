@@ -21,7 +21,6 @@ Create a Heroku app, set your ngrok token, and push:
 
 ```sh-session
 $ heroku create
-$ heroku buildpacks:add heroku/python
 $ heroku buildpacks:add heroku/jvm
 $ heroku buildpacks:add https://github.com/testm599/heroku-buildpack-minecraft
 $ heroku config:set NGROK_API_TOKEN="xxxxx"
